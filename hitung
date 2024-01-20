@@ -1,0 +1,46 @@
+
+fun rapot(name: String, age:Int, ranking:Int){
+    println ("nilai $name totalnya $age mendapatkan ranking $ranking")
+}
+
+fun lulus( name : String, mm : Int, inggris : Int, indonesia : Int, pkn : Int, lulus : String){
+    println("\nSiswa bernama $name dengan deskripsi nilai berikut: \nnilai matematika :$mm, \nnilai B.inggris :$inggris, \nNilai B.Indonesia :$indonesia, \nNilai PKN :$pkn dinyatakan $lulus")
+   
+}
+
+fun tambah (nilaia : Int, nilaib : Int) :Int{
+   return nilaia + nilaib
+}
+fun kurang (nilaia : Int, nilaib :Int) :Int{
+   return nilaia - nilaib
+}
+fun kali (nilaia : Int, nilaib :Int) :Int{
+   return nilaia * nilaib
+}
+fun bagi(nilaia : Int, nilaib :Int) :Int{
+   return nilaia / nilaib
+}
+fun segitiga(alas :Int, tinggi :Int, nilai : Double) : Double{
+    return alas * tinggi * nilai
+}
+fun persegipanjang(panjang :Int, lebar :Int) : Int{
+    return panjang * lebar
+}
+
+fun main() {
+    rapot("Budi", 350, 10)
+    lulus("Udin",80, 90, 100, 75, "lulus")
+    val tambah = tambah(10,10)
+    println("\nIni adalah hasil penjumlahan $tambah")
+    val kurang = kurang(10,15)
+    println("Ini adalah hasil pengurangan $kurang")
+      val kali = kali(20,50)
+    println("Ini adalah hasil perkalian $kali")
+      val bagi = bagi(100,2)
+    println("Ini adalah hasil pembagian $bagi")
+      val luas = segitiga(10,20,0.5)
+    print("\nIni adalah hasil rumus segitiga $luas")
+     val luass = persegipanjang(10,20)
+    print("\nIni adalah hasil luas persegipanjang $luass")
+ 
+}
